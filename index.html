@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>DDS SVC &#166; 로그인</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- // style -->
+</head>
+
+<body>
+    <div id="wrap" class="wrap">
+        <!-- header -->
+        <header id="header" class="header">
+            <div class="header-inner">
+                <a href="/" class="login-logo">DDS SVC</a>
+            </div>
+        </header>
+        <!-- // header -->
+
+        <!-- login main -->
+        <section class="login-main">
+            <div id="container" class="container">
+                <div class="login-wrap">
+                    <form id="frm_login" name="frmLogin" action="./main.html" method="get">
+                        <ul class="menu-wrap">
+                            <li class="menu-item on">
+                                <input type="radio" id="main" name="group" class="input-radio" value="main" checked>
+                                <label for="main" class="menu-main">Portal</label>
+                            </li>
+                            <li class="menu-item">
+                                <input type="radio" id="svcGroup" name="group" class="input-radio" value="service">
+                                <label for="svcGroup" class="menu-service">Svc Group</label>
+                            </li>
+                            <li class="menu-item">
+                                <input type="radio" id="userPay" name="group" class="input-radio" value="userPay">
+                                <label for="userPay" class="menu-user-pay">Pay</label>
+                            </li>
+                        </ul>
+                        <div class="panel-wrap">
+                            <div class="panel-inner clearfix">
+                                <div class="login-info-wrap">
+                                    <div class="group-input">
+                                        <input type="text" id="group" name="group" placeholder="그룹을 입력하세요." onkeyup="enterkey()">
+                                        <button type="button" class="btn-delete" id="group_delete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="company-input">
+                                        <input type="text" id="company" name="company" placeholder="회사를 입력하세요." onkeyup="enterkey()">
+                                        <button type="button" class="btn-delete" id="company_delete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="id-input">
+                                        <input type="text" id="id" name="id" placeholder="아이디를 입력하세요." onkeyup="enterkey()">
+                                        <button type="button" class="btn-delete" id="id_delete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                    <div class="pw-input">
+                                        <input type="password" id="pw" name="pw" placeholder="패스워드를 입력하세요." onkeyup="enterkey()">
+                                        <button type="button" class="btn-delete" id="pw_delete">
+                                            <i class="fas fa-times-circle"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="panel-bottom clearfix">
+                                    <div class="keep-wrap">
+                                        <div>
+                                            <input type="checkbox" id="keep_id">
+                                            <label for="keep_id">아이디 저장</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="keep_login">
+                                            <label for="keep_login">로그인 유지</label>
+                                        </div>
+                                    </div>
+                                    <div class="submit-wrap">
+                                        <button type="submit" id="login_submit" class="login-submit">로그인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="find-wrap clearfix">
+                        <ul>
+                            <li><a href="#">아이디 찾기</a></li>
+                            <li><a href="#">비밀번호 찾기</a></li>
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // login main -->
+
+        <!-- footer -->
+        <footer id="footer" class="footer">
+            <div class="footer-inner">
+                <div class="copy">
+                    <p>Copyright © (주)도들샘. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- // footer -->
+    </div>
+
+    <!-- scirpt -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
+        integrity="sha512-UDJtJXfzfsiPPgnI5S1000FPLBHMhvzAMX15I+qG2E2OAzC9P1JzUwJOfnypXiOH7MRPaqzhPbBGDNNj7zBfoA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <![endif]-->
+    <script src="./js/respond.min.js"></script>
+    <script type="text/javascript" src="./js/prefixfree.min.js"></script>
+    <script src="https://kit.fontawesome.com/af449e2132.js" crossorigin="anonymous"></script>
+    <script src="./js/common.js"></script>
+    <!-- // scirpt -->
+</body>
+
+</html>

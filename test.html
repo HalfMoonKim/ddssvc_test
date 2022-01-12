@@ -1,0 +1,18 @@
+<script>
+    function to_ajax() {
+        var queryString = $("form[name=frmLogin]").serialize();
+
+        $.ajax({
+            type: 'post',
+            url: '/test.jsp',
+            data: queryString,
+            dataType: 'json',
+            error: function (xhr, status, error) {
+                alert(error);
+            },
+            success: function (json) {
+                alert(json)
+            }
+        });
+    }
+</script>

@@ -1,0 +1,108 @@
+/* header */
+.header {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-bottom: .1rem solid rgba(146, 129, 122, .2);
+    z-index: 10;
+}
+
+.header-inner {
+    position: relative;
+    height: 10rem;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 10rem;
+    font-size: 4rem;
+    color: #8DB596;
+    font-weight: 700;
+    line-height: 2.5;
+    transition: .3s ease;
+}
+
+.logo:hover {
+    color: #92817A;
+}
+
+/* snb */
+.snb {
+    position: absolute;
+    height: calc(100% - 15rem);
+    background: #8DB596;
+    border-right: .1rem solid rgba(146, 129, 122, .2);
+}
+
+.snb-nav {
+    padding: 2rem;
+}
+
+.snb-nav li {
+    position: relative;
+    padding: .5rem 1rem .5rem 3rem;
+    border-bottom: .1rem solid rgba(190, 219, 187, .2);
+    transition: .3s;
+}
+
+.snb-nav li:hover {
+    background: #92817A;
+}
+
+.snb-nav li:hover::before,
+.snb-nav li:hover a {
+    color: #fff;
+}
+
+.snb-nav li::before {
+    content: '\f111';
+    position: absolute;
+    left: 1rem;
+    top: 1.1rem;
+    font-family: 'Font Awesome 5 Free';
+    color: #707070;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.snb-nav li:nth-child(1)::before {
+    content: '\f2f6';
+    font-weight: 900;
+}
+
+.snb-nav li:nth-child(2)::before {
+    content: '\f01e';
+    font-weight: 900;
+}
+
+.snb-nav li:nth-child(3)::before {
+    content: '\f328';
+    font-weight: 900;
+}
+
+.snb-nav li:last-child::before {
+    content: '\f2f5';
+    font-weight: 900;
+}
+
+.snb-nav li a {
+    font-size: 1.6rem;
+    color: #707070;
+    transition: .3s;
+}
+
+/* footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: .1rem solid rgba(146, 129, 122, .2);
+    z-index: 5;
+}
+
+.footer-inner {
+    height: 5rem;
+    padding-top: 1.5rem;
+}
